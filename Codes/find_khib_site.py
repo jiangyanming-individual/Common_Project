@@ -213,7 +213,7 @@ wb.close()
 f1=open('rice-leave-pos','w')
 f2=open('rice-leave-neg','w')
 f=open('data/rice-leave.fasta')
-n=1;
+n=1
 seq=''
 for line in f:
     if(line.startswith('>')):
@@ -285,7 +285,8 @@ wb.close()
 f1=open('soybeanLeavePos','w')
 f2=open('soybeanLeaveNeg','w')
 f=open('data/soybean.fasta')
-n=1;
+
+n=1
 seq=''
 for line in f:
     if(line.startswith('>')):
