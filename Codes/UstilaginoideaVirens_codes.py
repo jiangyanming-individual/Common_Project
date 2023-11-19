@@ -20,7 +20,7 @@ sht = wb.sheets('Ustilaginoidea virens')
 def read_file():
 
     index_list=[]
-    with open('../back/index.txt', 'r') as f:
+    with open('../Back/index.txt', 'r') as f:
         for line in f.readlines():
             index_list.append(line.strip().strip('\n'))
     # print(index_list)

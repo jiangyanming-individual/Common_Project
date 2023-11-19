@@ -41,7 +41,15 @@ def get_mapId():
 def get_length():
 
     strmap='MQIFVKTLTGKTITLEVESSDTIDNVKSKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGGKKRKKKVYTTPKKIKHKHRKHKLAVLTYYKVDNEGNVERLRRECPAPTCGAGIFMANMKDRQYCGKCHLTLKAN'
-    print(len(strmap))
+
+    index=0
+    for i in strmap:
+        # print(i)
+        index+=1
+        if i == 'K':
+            print(index)
+
+    # print(len(strmap))
 if __name__ == '__main__':
 
     # get_number()
