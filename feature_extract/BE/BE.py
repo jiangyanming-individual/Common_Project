@@ -13,8 +13,8 @@ def BE_encoding(filepath):
     result_seq_data = []
     result_seq_labels = []
 
-    for data in data_list:
-        seq,label=data[0],data[1]
+    for seq,label in data_list:
+
         one_seq = []
         result_seq_labels.append(int(label))
         for amino_acid in seq:
@@ -34,6 +34,6 @@ if __name__ == '__main__':
 
     train_filepath='../../Datasets/Khib_train.csv'
     test_filepath='../../Datasets/Khib_test.csv'
-    seq_data,labels=BE_encoding(train_filepath)
+    seq_data,labels=BE_encoding(train_filepath) #(37,21)
 
     print(seq_data.shape)

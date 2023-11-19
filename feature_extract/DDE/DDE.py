@@ -6,6 +6,8 @@ import pandas as pd
 
 
 def DDE(fastas, **kw):
+
+
 	AA = kw['order'] if kw['order'] != None else 'ACDEFGHIKLMNPQRSTVWY'
 	# 61 categary
 	myCodons = {
@@ -48,6 +50,7 @@ def DDE(fastas, **kw):
 
 	for i in fastas:
 		name, sequence = i[0], re.sub('-', '', i[1])
+
 		code = [name]
 		myDC = [0] * 400
 		for j in range(len(sequence) - 2 + 1):

@@ -22,9 +22,8 @@ def CKSAAP_encoding(filepath,k):
 
     result_seq_data = []
     result_seq_labels = []
-    for data in data_list:
+    for seq,label in data_list:
 
-        seq, label = data[0], data[1]
         result_seq_labels.append(int(label))
         peptein_length=len(seq)
 
