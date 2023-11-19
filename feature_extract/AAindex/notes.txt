@@ -1,0 +1,1 @@
+AAindex_normalized.txt 是将AAindex属性进行正则化之后的结果，选取前29种属性。

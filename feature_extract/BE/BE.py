@@ -34,6 +34,6 @@ if __name__ == '__main__':
 
     train_filepath='../../Datasets/Khib_train.csv'
     test_filepath='../../Datasets/Khib_test.csv'
-    result=BE_encoding(train_filepath)
+    seq_data,labels=BE_encoding(train_filepath)
 
-    print(result)
+    print(seq_data.shape)

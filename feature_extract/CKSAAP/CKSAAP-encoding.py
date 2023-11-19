@@ -1,8 +1,6 @@
 import numpy as np
 Amino_acid_sequence = 'ACDEFGHIKLMNPQRSTVWYX'
 
-
-
 def create_empty_matrix():
     return np.zeros((21, 21))
 

@@ -14,7 +14,6 @@ def AAindex(sequence):
     AAindex_dict['X'] = [0] * 12  
     feature_vector = []
 
-    #一个sequence 的AAindex
     for item in sequence:
         feature_vector.extend(AAindex_dict[item])
     return feature_vector
