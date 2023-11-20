@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 
 
-
 def AAindex_encoding(filepath):
     data_list = []
 
