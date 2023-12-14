@@ -15,8 +15,6 @@ def calculate_number(filepath):
     total_numbers=pos_numbers + neg_numbers
     return total_numbers,pos_numbers,neg_numbers
 
-
-
 if __name__ == '__main__':
 
     train_filepath = '../../Datasets/Khib_train.csv'
