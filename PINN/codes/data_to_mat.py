@@ -1,5 +1,5 @@
 import pandas as pd
-import scipy.io
+from scipy import io
 
 # 创建一个空的DataFrame用于存储合并后的数据
 
@@ -11,15 +11,19 @@ for file in csv_files:
     # 读取CSV文件
     if file == '../data/x.csv':
         data = pd.read_csv(file)
-        data_dict['x'] =data
+        data_dict['x'] =data.values
 
     elif file== '../data/t.csv':
         data = pd.read_csv(file)
-        data_dict['t'] = data
+        data_dict['t'] = data.values
 
-    else:
+    elif file== '../data/usol.csv':
         data = pd.read_csv(file)
-        data_dict['usol'] = data
+        data_dict['usol'] = data.values
 
+
+
+print(data_dict['x'])
+print(data_dict['t'])
 #保存为mat文件
-scipy.io.savemat('../data/output.mat', data_dict)
+io.savemat('../data/output.mat', data_dict)

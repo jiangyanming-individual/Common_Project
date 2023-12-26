@@ -54,12 +54,10 @@ class MyDataset(Dataset):
     def words_to_id(self, examples):
         temp_example = []
         for i, example in enumerate(examples):
-
             seq, label = example
             seq = [self.word2id_dict.get(AA) for AA in seq]
             label = int(label)
             temp_example.append((seq, label))
-
         return temp_example
 
     def __getitem__(self, idx):
@@ -105,7 +103,6 @@ class AddNorm(nn.Module):
         return self.LayerNorm(X + self.dropout(Y))
 
 class EncoderBlock(nn.Module):
-
 
     def __init__(self, key_size, query_size, value_size, num_hiddens,
                  norm_shape, ffn_num_input, ffn_num_hiddens, num_heads,

@@ -38,8 +38,6 @@ class BERT_Encoder(nn.Module):
         self.positional_embedding=nn.Parameter(torch.randn(1,max_len,num_hiddens))
 
 
-
-
     def forward(self,tokens,segmens,valid_lens):
 
         X=self.token_embedding(tokens) + self.segment_embedding(segmens)
